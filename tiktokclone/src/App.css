@@ -1,0 +1,20 @@
+html{
+  scroll-snap-type: y mandatory;
+}
+.app{
+  background-color : black;
+  display: grid;
+  place-items: center;
+}
+.container{
+ height:90vh;
+ width:50.625vh;
+ position: relative;
+ overflow:scroll;
+ border-radius:20px;
+ -ms-overflow-style: none; 
+scrollbar-width: none; 
+}
+.container::-webkit-scrollbar {
+display: none;
+}
