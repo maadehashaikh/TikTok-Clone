@@ -1,12 +1,33 @@
-import React from 'react'
+// import React from 'react'
 
-function video(props) {
-  const { url } = props
+// function video(props) {
+//   const { url } = props
+//   return (
+//     <div className="video">
+// 			<video className="player" loop src={url}></video>
+// 		</div>
+//   )
+// }
+
+// export default video
+
+import React from 'react'
+import Footer from './FooterLeft'
+import './Video.css'
+
+export default function Video(props) {
+	const { url, channel, description, song } = props;		
   return (
-    <div className="video">
+		<div className="video">
 			<video className="player" loop src={url}></video>
+			<div className="bottom-controls">
+				<Footer
+					channel={channel}
+					description={description}
+					song={song}
+				/>
+			</div>
 		</div>
-  )
+	)
 }
 
-export default video
