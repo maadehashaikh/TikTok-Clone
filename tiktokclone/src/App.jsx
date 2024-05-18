@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Video from './Video'
 import './App.css'
-
 const API_URL =
 	'https://raw.githubusercontent.com/codedamn-classrooms/tiktok-react-material/main/data.json'
 
@@ -24,6 +23,9 @@ export default function App() {
 							channel={video.channel}
 							description={video.description}
 							song={video.song}
+							likes={video.likes}
+							shares={video.shares}
+							messages={video.messages}
 							url={video.url}
 						/>
 					)
